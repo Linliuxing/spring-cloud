@@ -8,12 +8,10 @@ spring:
       server:
         git:
           uri: https://github.com/Linliuxing/spring-cloud
-          username: 929593448@qq.com
-          password: liuxing91483
-        default-label: eureka
-management:
-  security:
-    enabled: false
+          search-paths: config-repo
+          username:
+          password:
+#        default-label: eureka
 eureka:
   client:
     serviceUrl:
