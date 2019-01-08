@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: health-provider
+endpoints:
+  sensitive: false
+eureka:
+  client:
+    instance-info-replication-interval-seconds: 10
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/

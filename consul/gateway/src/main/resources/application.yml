@@ -1,0 +1,23 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: spring-cloud-gateway
+  cloud:
+    gateway:
+      default-filters:
+      routes:
+      - id: 163_route
+        uri: http://www.163.com/
+        predicates:
+        - Path=/163
+#        id: 163_route
+#        uri: http://www.163.com/
+#        predicates: Path=/163
+
+logging:
+  level:
+    org.springframework.cloud.gateway: TRACE
+    org.springframework.http.server.reactive: DEBUG
+    org.springframework.web.reactive: DEBUG
+    reactor.ipc.netty: DEBUG
