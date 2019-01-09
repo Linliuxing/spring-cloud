@@ -17,6 +17,7 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
 
+## 刷新时，关闭安全验证
 #2.*版本
 management:
   endpoints:
