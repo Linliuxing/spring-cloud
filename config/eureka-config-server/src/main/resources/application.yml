@@ -11,7 +11,7 @@ spring:
           search-paths: config-repo
           #私库才用账号密码
           username:
-          password          default-label: master
+          password:
   rabbitmq:
       host: 127.0.0.1
       port: 5672
