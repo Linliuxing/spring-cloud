@@ -17,7 +17,9 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
 
-## 刷新时，关闭安全验证
 management:
-  security:
-    enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
+
