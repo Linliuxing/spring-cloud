@@ -8,7 +8,7 @@ spring:
       trace:
         enabled: true #开启消息跟踪
   rabbitmq:
-    host: localhost
+    host: 127.0.0.1
     port: 5672
     username: guest
     password: guest
