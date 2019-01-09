@@ -17,9 +17,13 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
 
+#2.*版本
 management:
   endpoints:
     web:
       exposure:
         include: bus-refresh
+
+#1.*版本
+#management.security.enabled=false
 
