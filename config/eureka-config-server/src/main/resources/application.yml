@@ -11,8 +11,18 @@ spring:
           search-paths: config-repo
           username:
           password:
-#        default-label: eureka
+  rabbitmq:
+      host: 127.0.0.1
+      port: 5672
+      username: guest
+      password: guest
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
